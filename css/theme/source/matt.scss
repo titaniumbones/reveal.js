@@ -75,6 +75,28 @@ $urgentColor: $red;
 // ---------------------------------------------
 
 
+pre.klipse {
+    display: grid;
+    grid-template-areas: "code result";
+
+    div.klipse-snippet {
+        grid-template-area: "code";
+    }
+    div.klipse-result {
+        grid-template-area: "result"
+    }
+    div.klipse-separator, div.klipse-container {
+        line-height: 0px;
+        display: none;
+    }
+    
+}
+@media (max-width: 800px) {
+    pre.klipse {
+        grid-template-areas: "code" "result";
+    }
+}
+
 .reveal code {
     // background-color: white;
     padding: 6px;
@@ -82,7 +104,7 @@ $urgentColor: $red;
     border-radius: 3px;
 }
 
-// klips quick fix, maybe hcange later
+// klipse quick fix, maybe change later
 
 .reveal pre .CodeMirror {
     font-size: 0.55rem;
