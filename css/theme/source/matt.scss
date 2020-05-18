@@ -76,10 +76,16 @@ $urgentColor: $red;
 
 
 .reveal code {
-    background-color: white;
+    // background-color: white;
     padding: 6px;
-    border: solid red 1px;
+    //border: solid red 1px;
     border-radius: 3px;
+}
+
+// klips quick fix, maybe hcange later
+
+.reveal pre .CodeMirror {
+    font-size: 0.55rem;
 }
 
 /*********************************************
@@ -147,14 +153,6 @@ span.figure-number {
 
 p.date {
     display:none;
-}
-
-.reveal code {
-    background-color: white;
-    padding: 6px;
-    border: solid red 1px;
-    border-radius: 3px;
-    line-height: 1.8em;
 }
 
 
