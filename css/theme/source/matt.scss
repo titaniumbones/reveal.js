@@ -12,7 +12,7 @@
 
 
 // Include theme-specific fonts
-@import url(../../lib/font/league-gothic/league-gothic.css);
+@import url(./fonts/league-gothic/league-gothic.css);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 
 
@@ -46,14 +46,14 @@ $green:     #859900;
 $headingLineHeight: 1.1;
 $headingLetterSpacing: normal;
 $headingTextTransform: none;
-$headingTextShadow: none;
-$headingFontWeight: normal;
-$heading1TextShadow: $headingTextShadow;
+// $headingTextShadow: none;
+// $headingFontWeight: normal;
+// $heading1TextShadow: $headingTextShadow;
 
-$heading1Size: 3.22em;
-$heading2Size: 2.00em;
-$heading3Size: 1.55em;
-$heading4Size: 1.00em;
+// $heading1Size: 3.22em;
+// $heading2Size: 2.00em;
+// $heading3Size: 1.55em;
+// $heading4Size: 1.00em;
 
 $mainColor: $base00;
 $headingColor: $base01;
@@ -186,8 +186,8 @@ p.date {
 // LAYOUTS!!! this is the important thing I want to add
 
 @function block-back ($color, $n) {
-    $output: adjust-hue($color, $n*4);
-    $output: darken($output, $n*7);
+    $output: adjust-hue($color, $n*2);
+    $output: darken($output, $n*2);
     @return $output ;
 }
 
@@ -198,7 +198,7 @@ $content-areas: (a, b, c, d);
 // common attributes for all of these layouts
 section.twoc, section.splitc, section.threec, section.twobytwo {
     display: grid !important;
-    grid-gap: 10px;
+    grid-gap: 2px;
     grid-template-columns: 50% 50%; 
     grid-template-rows: 10vh 90vh;
     box-sizing: border-box;
@@ -277,3 +277,33 @@ span.urgent {
     
 }
 
+figure {
+    display: table;
+    margin:auto;
+    font-size: 0.8em;
+    font-style: italic;
+    figcaption {
+        display: table-caption;
+        caption-side: top;
+    }
+}
+// figure {
+//     display: flex;
+//     max-height: 80%
+//     flex-direction: column;
+//     margin: 0;
+//     img {
+//         max-width: 100%;
+//     }
+
+//     figcaption {
+//         align-self: flex-start;
+//         text-align: center;
+//         font-size: 22px;
+//         font-style: italic;
+//         line-height: 1.5;
+//         color: #777;
+//         // padding-right: 35px;
+//         /*adjust this to control how far it should be from egde*/
+//     }
+// }
