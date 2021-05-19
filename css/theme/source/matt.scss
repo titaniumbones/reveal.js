@@ -75,6 +75,19 @@ $urgentColor: $red;
 // ---------------------------------------------
 
 
+// fix hideous bullets
+.reveal ul ul {
+    list-style-type: circle;
+}
+
+
+
+// add styling for todo's
+.todo.ACTION {
+    color: #a11a1a;
+}
+
+// deal with some klipse stuff
 pre.klipse {
     display: grid;
     grid-template-areas: "code result";
@@ -102,6 +115,13 @@ pre.klipse {
     padding: 6px;
     //border: solid red 1px;
     border-radius: 3px;
+}
+
+.reveal li>code {
+    background-color: white;
+    border-radius: 3px;
+    border: 1px black solid;
+    padding: 1px;
 }
 
 // klipse quick fix, maybe change later
@@ -231,8 +251,12 @@ section.twoc, section.splitc, section.threec, section.twobytwo {
                 object-position: 50% 50%;
             }
         }
+        blockquote {
+            font-size: 0.9em;
+            width: 95%;
+        }
     }
-    
+
 
     @for $i from 1 through 4 {
         .slideblock:nth-of-type(#{$i}), .paired:nth-of-type(#{$i}) {
@@ -307,3 +331,17 @@ figure {
 //         /*adjust this to control how far it should be from egde*/
 //     }
 // }
+
+// bibliography hack
+#slide-bibliography {
+    overflow-y: auto;
+    max-height: 90vh;
+
+    .csl-bib-body {
+        margin-left: 1em;
+        text-indent: -1em;
+        text-align: left;
+        font-size: 0.8em;
+    }
+}
+
