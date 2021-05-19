@@ -197,7 +197,7 @@ html * {
   display: block;
   padding: 5px;
   overflow: auto;
-  max-height: 400px;
+  max-height: 800px;
   word-wrap: normal; }
 
 .reveal table {
@@ -296,5 +296,3 @@ html * {
 @media print {
   .backgrounds {
     background-color: #fdf6e3; } }
-
-/*# sourceMappingURL=solarized.css.map */

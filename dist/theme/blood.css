@@ -199,7 +199,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   display: block;
   padding: 5px;
   overflow: auto;
-  max-height: 400px;
+  max-height: 800px;
   word-wrap: normal; }
 
 .reveal table {
@@ -321,5 +321,3 @@ section.has-light-background p, section.has-light-background h1, section.has-lig
 
 .reveal small code {
   vertical-align: baseline; }
-
-/*# sourceMappingURL=blood.css.map */

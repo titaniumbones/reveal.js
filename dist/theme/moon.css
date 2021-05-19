@@ -200,7 +200,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   display: block;
   padding: 5px;
   overflow: auto;
-  max-height: 400px;
+  max-height: 800px;
   word-wrap: normal; }
 
 .reveal table {
@@ -299,5 +299,3 @@ section.has-light-background, section.has-light-background h1, section.has-light
 @media print {
   .backgrounds {
     background-color: #002b36; } }
-
-/*# sourceMappingURL=moon.css.map */
